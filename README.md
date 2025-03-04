@@ -1,16 +1,43 @@
-# trial_task
+# Flutter Task with Appwrite Integration
 
-A new Flutter project.
+A Flutter application that demonstrates backend integration with Appwrite.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Setup Instructions
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository
+2. Create a `.env` file in the root directory with the following:
+```
+APPWRITE_ENDPOINT=your_appwrite_endpoint
+APPWRITE_PROJECT_ID=your_project_id
+APPWRITE_DATABASE_ID=your_database_id
+APPWRITE_COLLECTION_ID=your_collection_id
+```
+3. Run `flutter pub get`
+4. Run the app using `flutter run`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Appwrite Backend Configuration 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Collection Structure
+- Collection Name: `items`
+- Fields:
+  - `title` (String)
+  - `description` (String)
+
+### Sample Data
+The backend contains three pre-configured items that will be fetched when clicking the "Load Data" button.
+
+## Screenshots
+
+### Main Screen
+[Main screen with Load Data button](/screenshots/main_screen.png)
+
+### Data Loaded State
+[Screenshot of loaded items in ListView](/screenshots/loaded_state.png)
+
+
+## Tech Stack
+
+- Flutter
+- Appwrite Backend
+
